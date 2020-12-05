@@ -3,6 +3,8 @@ body{
     background-position: center;
     /* background-size: contain; */
     background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 }
 .container{
     margin-top: 2em;
@@ -96,4 +98,144 @@ table tr td:last-child {
     font-size: 45px;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.pacman1{
+    margin-left: 10px;
+
+}
+
+.toon1{
+    width:30px;
+    opacity: 0;
+    animation-name: mypac;
+    animation-delay: 4s;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+.toon2{
+    width:30px;
+    animation-name: myredberry;
+    animation-duration: 15s;
+    animation-delay: 8.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.toon3{
+    opacity: 0;
+    width:30px;
+    animation-name: myredtoon;
+    animation-duration: 7s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mypac{
+    0%{
+        opacity: 1;
+        transform: translateX(-1050px);
+    }
+
+    99%{
+       opacity: 1;
+       transform: translateX(1100px);
+    }
+
+    100%{
+       opacity: 0;
+       transform: translateX(1105px);
+   }
+}
+
+@keyframes myredberry{
+    0%{
+       opacity: 0;
+    }
+
+    100%{
+       opacity: 0;
+    }
+}
+
+@keyframes myredtoon{
+    0%{
+        opacity: 1;
+        transform: translateX(-950px);
+    }
+
+    99%{
+       opacity: 1;
+       transform: translateX(1100px);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(1105px);
+    }
+
+}
+
+
+.toon4{
+    animation-iteration-count: infinite;
+    opacity: 0;
+    width:40px;
+    animation-name: enecrew;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.toon5{
+    animation-iteration-count: infinite;
+    opacity: 0;
+    width:90px;
+    animation-name: beast;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enecrew{
+    0%{
+        opacity: 1;
+        transform: translateX(-1050px);
+    }
+
+    99%{
+       opacity: 1;
+       transform: translateX(1400px);
+    }
+
+    100%{
+       opacity: 0;
+       transform: translateX(1405px);
+   }
+}
+
+@keyframes beast{
+    0%{
+        opacity: 1;
+        transform: translateX(-950px);
+    }
+
+    99%{
+       opacity: 1;
+       transform: translateX(1400px);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(1405px);
+    }
+
+}
+
+.foot{
+    color: royalblue;
+    position: absolute;
+    bottom: 85px;
+    left: 5px;
 }
